@@ -38,9 +38,9 @@ const finalTestData = [
     { type: 'multiple', category: '❓ W-Fragen', question: 'Verbul în propoziția „Andreea kommt aus Rumänien" este pe poziția:', options: ['1', '2', '3', '4'], correct: '2', explanation: 'Regula de aur a germanei: verbul mereu pe poziția 2 (Andreea[1] kommt[2] aus[3] Rumänien[4]).' },
 
     // 3x Recunoaște personajele
-    { type: 'multiple', category: '👥 Personaje', question: 'Cine e PROFESOARA cursului?', options: ['Carolina', 'Andreea', 'Annette', 'Hanane'], correct: 'Annette', explanation: 'Annette Hullmann, 28 ani, din Berlin — profesoara „Annettes Deutschkurs".' },
-    { type: 'multiple', category: '👥 Personaje', question: 'Cine vine din ROMÂNIA?', options: ['Mihai', 'Andreea', 'Florian', 'Carolina'], correct: 'Andreea', explanation: 'Andreea Anghelescu, 21 ani, studentă în Brandenburg — singura româncă din clasă.' },
-    { type: 'multiple', category: '👥 Personaje', question: 'Care personaj e MAISTRU (Vorarbeiter)?', options: ['Mihai', 'Florian', 'Acar', 'Carolina'], correct: 'Acar', explanation: 'Acar Schimael, 34 ani, din Maroc — maistru de construcții în Oranienburg.' }
+    { type: 'multiple', category: '👥 Personaje', question: 'Cine e PROFESOARA cursului?', options: ['Carolina', 'Andreea', 'Annette', 'Hanane'], correct: 'Annette', explanation: 'Hullmann, 28 ani, din Berlin — profesoara „Annettes Deutschkurs".' },
+    { type: 'multiple', category: '👥 Personaje', question: 'Cine vine din ROMÂNIA?', options: ['Mihai', 'Andreea', 'Florian', 'Carolina'], correct: 'Andreea', explanation: 'Anghelescu, 21 ani, studentă în Brandenburg — singura româncă din clasă.' },
+    { type: 'multiple', category: '👥 Personaje', question: 'Care personaj e MAISTRU (Vorarbeiter)?', options: ['Mihai', 'Florian', 'Acar', 'Carolina'], correct: 'Acar', explanation: 'Schimael, 34 ani, din Maroc — maistru de construcții în Oranienburg.' }
 ];
 
 let currentQuestionIndex = 0;
@@ -300,4 +300,5 @@ function goBackToTheory() {
     if (ts) ts.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-document.addEventListener('DOMContentLoaded', function() { buildFinalTest(); });
+// Init direct — DOM e gata pentru că scriptul e la sfârșitul <body>
+buildFinalTest();

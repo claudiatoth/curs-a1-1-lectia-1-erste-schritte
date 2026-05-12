@@ -110,12 +110,12 @@ function checkEx2() {
 // EXERCIȚIUL 3: Wer ist das? Recunoaște personajul!
 // ============================================
 const ex3Data = [
-    { id: 'a', sentence: 'Sie kommt aus Rumänien und wohnt in Brandenburg. Sie ist Studentin.', options: ['Andreea', 'Carolina', 'Annette', 'Mihai'], correct: 'Andreea', explanation: 'Andreea — singura din clasă care vine din România. Și e studentă.' },
-    { id: 'b', sentence: 'Er kommt aus Russland. Er ist Koch und wohnt in Potsdam.', options: ['Florian', 'Mihai', 'Acar', 'Annette'], correct: 'Mihai', explanation: 'Mihai — bucătarul din Rusia, locuiește în Potsdam.' },
-    { id: 'c', sentence: 'Sie kommt aus Deutschland und ist Lehrerin. Sie wohnt in Berlin.', options: ['Carolina', 'Andreea', 'Annette', 'Acar'], correct: 'Annette', explanation: 'Annette — profesoara noastră! Singura germancă din clasă.' },
-    { id: 'd', sentence: 'Er kommt aus Dänemark. Er ist Arzt.', options: ['Florian', 'Mihai', 'Acar', 'Carolina'], correct: 'Florian', explanation: 'Florian — doctorul danez din Berlin.' },
-    { id: 'e', sentence: 'Sie kommt aus Mexiko und ist Fotografin.', options: ['Andreea', 'Annette', 'Carolina', 'Acar'], correct: 'Carolina', explanation: 'Carolina — fotografa din Mexic, locuiește în Berlin.' },
-    { id: 'f', sentence: 'Er wohnt in Oranienburg. Er kommt aus Marokko und ist Vorarbeiter.', options: ['Mihai', 'Florian', 'Acar', 'Annette'], correct: 'Acar', explanation: 'Acar — maistrul marocan din Oranienburg.' }
+    { id: 'a', sentence: 'Sie kommt aus Rumänien und wohnt in Brandenburg. Sie ist Studentin.', options: ['Andreea', 'Carolina', 'Annette', 'Mihai'], correct: 'Andreea', explanation: 'Singura cursantă care vine din România și e studentă în Brandenburg.' },
+    { id: 'b', sentence: 'Er kommt aus Russland. Er ist Koch und wohnt in Potsdam.', options: ['Florian', 'Mihai', 'Acar', 'Annette'], correct: 'Mihai', explanation: 'Bucătarul din Rusia, locuiește în Potsdam.' },
+    { id: 'c', sentence: 'Sie kommt aus Deutschland und ist Lehrerin. Sie wohnt in Berlin.', options: ['Carolina', 'Andreea', 'Annette', 'Acar'], correct: 'Annette', explanation: 'Profesoara noastră! Singura germancă din clasă.' },
+    { id: 'd', sentence: 'Er kommt aus Dänemark. Er ist Arzt.', options: ['Florian', 'Mihai', 'Acar', 'Carolina'], correct: 'Florian', explanation: 'Doctorul danez din Berlin.' },
+    { id: 'e', sentence: 'Sie kommt aus Mexiko und ist Fotografin.', options: ['Andreea', 'Annette', 'Carolina', 'Acar'], correct: 'Carolina', explanation: 'Fotografa din Mexic, locuiește în Berlin.' },
+    { id: 'f', sentence: 'Er wohnt in Oranienburg. Er kommt aus Marokko und ist Vorarbeiter.', options: ['Mihai', 'Florian', 'Acar', 'Annette'], correct: 'Acar', explanation: 'Maistrul marocan din Oranienburg.' }
 ];
 
 function buildEx3() {

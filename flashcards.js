@@ -124,6 +124,5 @@ function playFlashcardAudio(event) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    buildFlashcards();
-});
+// Init direct — DOM e gata pentru că scriptul e la sfârșitul <body>
+buildFlashcards();

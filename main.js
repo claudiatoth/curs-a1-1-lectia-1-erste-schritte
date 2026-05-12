@@ -136,11 +136,11 @@ function resetExercise(num) {
     
     switch(num) {
         case 1:
-            // Ex1 - selects
+            // Ex1 - radio buttons (formal/informal)
             ex1Data.forEach(item => {
-                const el = document.getElementById(`ex1-${item.id}`);
+                const radios = document.querySelectorAll(`input[name="ex1-${item.id}"]`);
+                radios.forEach(r => r.checked = false);
                 const fb = document.getElementById(`ex1-f${item.id}`);
-                if (el) el.value = '';
                 if (fb) {
                     fb.className = 'feedback';
                     fb.textContent = '';
@@ -184,11 +184,11 @@ function resetExercise(num) {
             });
             break;
         case 5:
-            // Ex5 - text inputs
+            // Ex5 - radio buttons (W-Frage + răspuns)
             ex5Data.forEach(item => {
-                const el = document.getElementById(`ex5-${item.id}`);
+                const radios = document.querySelectorAll(`input[name="ex5-${item.id}"]`);
+                radios.forEach(r => r.checked = false);
                 const fb = document.getElementById(`ex5-f${item.id}`);
-                if (el) el.value = '';
                 if (fb) {
                     fb.className = 'feedback';
                     fb.textContent = '';
