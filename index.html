@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erste Schritte mit Annette — Hallo! Wer bist du? · A1.1 Lecția 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#top" class="navbar-logo">ʚଓ Claudia Toth</a>
+        <ul class="navbar-menu">
+            <li><a href="#teorie" onclick="openSection(0)">Teorie</a></li>
+            <li><a href="#ex1" onclick="openSection(1)">Ex. 1</a></li>
+            <li><a href="#ex2" onclick="openSection(2)">Ex. 2</a></li>
+            <li><a href="#ex3" onclick="openSection(3)">Ex. 3</a></li>
+            <li><a href="#ex4" onclick="openSection(4)">Ex. 4</a></li>
+            <li><a href="#ex5" onclick="openSection(5)">Ex. 5</a></li>
+            <li><a href="#flashcards" onclick="openSection(6)">📇 Flashcards</a></li>
+            <li><a href="#final-test" onclick="openSection(7)">🎯 Test Final</a></li>
+            <li><a href="erste-schritte.pdf" download>📄 PDF</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="top">
+        <div class="header">
+            <h1>ʚଓ Erste Schritte mit Annette</h1>
+            <p class="subtitle">Hallo! Wer bist du? · Prezentare + salutări · Nivel A1.1</p>
+            <p>Claudia Toth · A1.1 — Annettes Deutschkurs · Lecția 1 din 10</p>
+        </div>
+
+        <div class="cast-banner">
+            <h4>👋 Cunoaște clasa: 5 cursanți + Annette (profesoara) — și TU ești al 7-lea!</h4>
+            <div class="cast-grid">
+                <div class="cast-card"><img src="images/annette.png" alt="Annette"><div class="name">Annette</div><div class="detail">Profesoara · Berlin</div></div>
+                <div class="cast-card"><img src="images/andreea.png" alt="Andreea"><div class="name">Andreea 🇷🇴</div><div class="detail">Studentă · Brandenburg</div></div>
+                <div class="cast-card"><img src="images/mihai.png" alt="Mihai"><div class="name">Mihai</div><div class="detail">Bucătar · Potsdam</div></div>
+                <div class="cast-card"><img src="images/florian.png" alt="Florian"><div class="name">Florian</div><div class="detail">Doctor · Berlin</div></div>
+                <div class="cast-card"><img src="images/carolina.png" alt="Carolina"><div class="name">Carolina</div><div class="detail">Fotografă · Berlin</div></div>
+                <div class="cast-card"><img src="images/acar.png" alt="Acar"><div class="name">Acar</div><div class="detail">Maistru · Oranienburg</div></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section" id="teorie">
+                <div class="section-header" onclick="toggleMainSection(0)">
+                    <h3>ʚଓ TEORIE</h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="section-content" id="main-section-0">
+                    <div id="theory-container"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex1">
+                <div class="section-header" onclick="toggleMainSection(1)">
+                    <h3>ʚଓ Übung 1: Formal sau informal?</h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="section-content" id="main-section-1">
+                    <div id="ex1-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(1)">✓ Verifica</button>
+                        <button class="btn btn-reset" onclick="resetExercise(1)">↻ Reseteaza</button>
+                    </div>
+                    <div class="score" id="score-1"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex2">
+                <div class="section-header" onclick="toggleMainSection(2)">
+                    <h3>ʚଓ Übung 2: Conjugă heißen / kommen / wohnen</h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="section-content" id="main-section-2">
+                    <div id="ex2-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(2)">✓ Verifica</button>
+                        <button class="btn btn-reset" onclick="resetExercise(2)">↻ Reseteaza</button>
+                    </div>
+                    <div class="score" id="score-2"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex3">
+                <div class="section-header" onclick="toggleMainSection(3)">
+                    <h3>ʚଓ Übung 3: Wer ist das? Recunoaște personajul!</h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="section-content" id="main-section-3">
+                    <div id="ex3-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(3)">✓ Verifica</button>
+                        <button class="btn btn-reset" onclick="resetExercise(3)">↻ Reseteaza</button>
+                    </div>
+                    <div class="score" id="score-3"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex4">
+                <div class="section-header" onclick="toggleMainSection(4)">
+                    <h3>ʚଓ Übung 4: Ordonează propoziția</h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="section-content" id="main-section-4">
+                    <div id="ex4-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(4)">✓ Verifica</button>
+                        <button class="btn btn-reset" onclick="resetExercise(4)">↻ Reseteaza</button>
+                    </div>
+                    <div class="score" id="score-4"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex5">
+                <div class="section-header" onclick="toggleMainSection(5)">
+                    <h3>ʚଓ Übung 5: W-Frage + răspuns potrivit</h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="section-content" id="main-section-5">
+                    <div id="ex5-container"></div>
+                    <div class="btn-container">
+                        <button class="btn btn-check" onclick="checkExercise(5)">✓ Verifica</button>
+                        <button class="btn btn-reset" onclick="resetExercise(5)">↻ Reseteaza</button>
+                    </div>
+                    <div class="score" id="score-5"></div>
+                </div>
+            </div>
+
+            <div class="section" id="flashcards">
+                <div class="section-header" onclick="toggleMainSection(6)">
+                    <h3>ʚଓ Flashcards - Învață cuvintele cu pronunție</h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="section-content" id="main-section-6">
+                    <div id="flashcards-container"></div>
+                </div>
+            </div>
+
+            <div class="section" id="final-test">
+                <div class="section-header" onclick="toggleMainSection(7)">
+                    <h3>ʚଓ 🎯 Test Final - Testează-ți cunoștințele!</h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="section-content" id="main-section-7">
+                    <div id="final-test-container"></div>
+                </div>
+            </div>
+
+            <div class="theory-box" style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.3rem; font-weight: bold; color: #065f46;">🎉 Bravo! Ai terminat Lecția 1 din A1.1!</p>
+                <p style="margin-top: 12px;">Acum poți să te prezinți, să întrebi pe cineva cum se numește, de unde vine și unde locuiește. Ai învățat cele <strong>3 verbe-cheie</strong> ale germanei (heißen, kommen, wohnen) și primele <strong>3 W-Fragen</strong> (Wie? Woher? Wo?).</p>
+                <p style="margin-top: 10px;">În <strong>Lecția 2</strong> învățăm <strong>numerele 0-100</strong> + cum spunem vârsta, anul, numărul de telefon. Ne vedem acolo! 🦋</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="theory.js"></script>
+    <script src="exercises.js"></script>
+    <script src="flashcards.js"></script>
+    <script src="final-test.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
