@@ -31,7 +31,7 @@ const flashcardsData = [
     { de: "Ich wohne in Brandenburg.", ro: "Locuiesc în Brandenburg.", audio: "audio/letters/ich-wohne-in-brandenburg.wav" },
     { de: "Ich bin Studentin.", ro: "Sunt studentă.", audio: "audio/letters/ich-bin-studentin.wav" },
     { de: "Mir geht's gut, danke.", ro: "Sunt bine, mulțumesc.", audio: "audio/letters/mir-gehts-gut.wav" },
-    { de: "Und dir?", ro: "Și tu? (după „Mir geht's gut")", audio: "audio/letters/und-dir.wav" },
+    { de: "Und dir?", ro: "Și tu? — răspuns când cineva îți spune Mir gehts gut", audio: "audio/letters/und-dir.wav" },
     { de: "Schön, dich auch kennenzulernen!", ro: "Și eu mă bucur să te cunosc!", audio: "audio/letters/schoen-auch.wav" },
     { de: "Mein Name ist Florian.", ro: "Numele meu este Florian. · formal", audio: "audio/letters/mein-name-ist.wav" },
 
