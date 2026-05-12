@@ -146,11 +146,11 @@ const theoryHTML = `
             </div>
 
             <table class="theory-table">
-                <thead><tr><th>Pronume</th><th>heißen</th><th>Exemplu</th></tr></thead>
+                <thead><tr><th>Pronume</th><th>heißen</th><th>Exemplu + traducere</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>ich</strong> (eu)</td><td><strong>heiße</strong></td><td>Ich heiße Andreea.</td></tr>
-                    <tr><td><strong>du</strong> (tu)</td><td><strong>heißt</strong></td><td>Du heißt Mihai.</td></tr>
-                    <tr><td><strong>er/sie/es</strong> (el/ea)</td><td><strong>heißt</strong></td><td>Sie heißt Annette.</td></tr>
+                    <tr><td><strong>ich</strong> (eu)</td><td><strong>heiße</strong></td><td>Ich heiße Andreea.<br><span class="ro-translation">Eu mă numesc Andreea.</span></td></tr>
+                    <tr><td><strong>du</strong> (tu)</td><td><strong>heißt</strong></td><td>Du heißt Mihai.<br><span class="ro-translation">Tu te numești Mihai.</span></td></tr>
+                    <tr><td><strong>er/sie/es</strong> (el/ea)</td><td><strong>heißt</strong></td><td>Sie heißt Annette.<br><span class="ro-translation">Ea se numește Annette.</span></td></tr>
                 </tbody>
             </table>
 
@@ -211,24 +211,24 @@ const theoryHTML = `
             </div>
 
             <table class="theory-table">
-                <thead><tr><th>Pronume</th><th>kommen</th><th>wohnen</th></tr></thead>
+                <thead><tr><th>Pronume</th><th>kommen <span class="ro-translation">(a veni)</span></th><th>wohnen <span class="ro-translation">(a locui)</span></th></tr></thead>
                 <tbody>
-                    <tr><td><strong>ich</strong></td><td>komme</td><td>wohne</td></tr>
-                    <tr><td><strong>du</strong></td><td>kommst</td><td>wohnst</td></tr>
-                    <tr><td><strong>er/sie/es</strong></td><td>kommt</td><td>wohnt</td></tr>
+                    <tr><td><strong>ich</strong> (eu)</td><td>komme <span class="ro-translation">(eu vin)</span></td><td>wohne <span class="ro-translation">(eu locuiesc)</span></td></tr>
+                    <tr><td><strong>du</strong> (tu)</td><td>kommst <span class="ro-translation">(tu vii)</span></td><td>wohnst <span class="ro-translation">(tu locuiești)</span></td></tr>
+                    <tr><td><strong>er/sie/es</strong> (el/ea)</td><td>kommt <span class="ro-translation">(el/ea vine)</span></td><td>wohnt <span class="ro-translation">(el/ea locuiește)</span></td></tr>
                 </tbody>
             </table>
 
             <h4 style="margin-top: 16px; color: #065f46;">Clasa lui Annette — de unde vine fiecare?</h4>
             <table class="theory-table">
-                <thead><tr><th>Cine</th><th>De unde</th><th>Unde locuiește</th></tr></thead>
+                <thead><tr><th>Cine</th><th>De unde (aus...)</th><th>Unde locuiește (in...)</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>Andreea</strong></td><td>aus Rumänien</td><td>in Brandenburg</td></tr>
-                    <tr><td><strong>Mihai</strong></td><td>aus Russland</td><td>in Potsdam</td></tr>
-                    <tr><td><strong>Annette</strong></td><td>aus Deutschland</td><td>in Berlin</td></tr>
-                    <tr><td><strong>Florian</strong></td><td>aus Dänemark</td><td>in Berlin</td></tr>
-                    <tr><td><strong>Carolina</strong></td><td>aus Mexiko</td><td>in Berlin</td></tr>
-                    <tr><td><strong>Acar</strong></td><td>aus Marokko</td><td>in Oranienburg</td></tr>
+                    <tr><td><strong>Andreea</strong></td><td>aus Rumänien <span class="ro-translation">(din România)</span></td><td>in Brandenburg <span class="ro-translation">(în Brandenburg)</span></td></tr>
+                    <tr><td><strong>Mihai</strong></td><td>aus Russland <span class="ro-translation">(din Rusia)</span></td><td>in Potsdam <span class="ro-translation">(în Potsdam)</span></td></tr>
+                    <tr><td><strong>Annette</strong></td><td>aus Deutschland <span class="ro-translation">(din Germania)</span></td><td>in Berlin <span class="ro-translation">(în Berlin)</span></td></tr>
+                    <tr><td><strong>Florian</strong></td><td>aus Dänemark <span class="ro-translation">(din Danemarca)</span></td><td>in Berlin <span class="ro-translation">(în Berlin)</span></td></tr>
+                    <tr><td><strong>Carolina</strong></td><td>aus Mexiko <span class="ro-translation">(din Mexic)</span></td><td>in Berlin <span class="ro-translation">(în Berlin)</span></td></tr>
+                    <tr><td><strong>Acar</strong></td><td>aus Marokko <span class="ro-translation">(din Maroc)</span></td><td>in Oranienburg <span class="ro-translation">(în Oranienburg)</span></td></tr>
                 </tbody>
             </table>
 
@@ -293,26 +293,27 @@ const theoryHTML = `
 
             <div class="theory-box" style="background: #d1fae5; border-left: 4px solid #10b981; margin-top: 14px;">
                 <h4>📌 Regula de aur a poziției verbului</h4>
-                <p>În <strong>W-Frage</strong>, verbul este SIEMPRE pe <strong>poziția 2</strong>, după cuvântul de întrebare.</p>
+                <p>În <strong>W-Frage</strong>, <strong>verbul conjugat</strong> este ÎNTOTDEAUNA pe <strong>poziția 2</strong>, imediat după cuvântul de întrebare.</p>
                 <p style="margin-top: 8px; font-family: monospace; font-size: 0.95rem;">
-                    [1] <strong>Wie</strong> &nbsp; [2] <strong>heißt</strong> &nbsp; [3] du?<br>
-                    [1] <strong>Woher</strong> &nbsp; [2] <strong>kommst</strong> &nbsp; [3] du?<br>
-                    [1] <strong>Wo</strong> &nbsp; [2] <strong>wohnst</strong> &nbsp; [3] du?
+                    [1] <strong>Wie</strong> &nbsp; [2] <strong>heißt</strong> &nbsp; [3] du? <span class="ro-translation">— Cum te numești?</span><br>
+                    [1] <strong>Woher</strong> &nbsp; [2] <strong>kommst</strong> &nbsp; [3] du? <span class="ro-translation">— De unde vii?</span><br>
+                    [1] <strong>Wo</strong> &nbsp; [2] <strong>wohnst</strong> &nbsp; [3] du? <span class="ro-translation">— Unde locuiești?</span>
                 </p>
-                <p style="margin-top: 10px;">Și în propoziția afirmativă (Aussagesatz), verbul tot pe poziția 2:</p>
+                <p style="margin-top: 10px;">Și în propoziția afirmativă (Aussagesatz), <strong>verbul conjugat</strong> rămâne tot pe poziția 2:</p>
                 <p style="font-family: monospace; font-size: 0.95rem;">
-                    [1] Ich &nbsp; [2] <strong>heiße</strong> &nbsp; [3] Andreea.<br>
-                    [1] Andreea &nbsp; [2] <strong>wohnt</strong> &nbsp; [3] in Brandenburg.
+                    [1] Ich &nbsp; [2] <strong>heiße</strong> &nbsp; [3] Andreea. <span class="ro-translation">— Eu mă numesc Andreea.</span><br>
+                    [1] Andreea &nbsp; [2] <strong>wohnt</strong> &nbsp; [3] in Brandenburg. <span class="ro-translation">— Andreea locuiește în Brandenburg.</span>
                 </p>
+                <p style="margin-top: 8px; font-size: 0.9rem; color: #6b7280;">💡 De ce „verbul conjugat"? Pentru că mai târziu vei vedea propoziții cu 2 verbe (de ex. <em>„Ich möchte schlafen"</em>) — atunci doar UNUL e conjugat (möchte) și el e pe poziția 2; celălalt (schlafen) merge la sfârșit. Regula e a verbului conjugat.</p>
             </div>
 
             <h4 style="margin-top: 16px; color: #065f46;">Forma politicoasă (cu Sie)</h4>
             <table class="theory-table">
-                <thead><tr><th>Informal (du)</th><th>Formal (Sie)</th></tr></thead>
+                <thead><tr><th>Informal (du)</th><th>Formal (Sie)</th><th>Traducere</th></tr></thead>
                 <tbody>
-                    <tr><td>Wie heißt <strong>du</strong>?</td><td>Wie heißen <strong>Sie</strong>?</td></tr>
-                    <tr><td>Woher kommst <strong>du</strong>?</td><td>Woher kommen <strong>Sie</strong>?</td></tr>
-                    <tr><td>Wo wohnst <strong>du</strong>?</td><td>Wo wohnen <strong>Sie</strong>?</td></tr>
+                    <tr><td>Wie heißt <strong>du</strong>?</td><td>Wie heißen <strong>Sie</strong>?</td><td><span class="ro-translation">Cum te numești? / Cum vă numiți?</span></td></tr>
+                    <tr><td>Woher kommst <strong>du</strong>?</td><td>Woher kommen <strong>Sie</strong>?</td><td><span class="ro-translation">De unde vii? / De unde veniți?</span></td></tr>
+                    <tr><td>Wo wohnst <strong>du</strong>?</td><td>Wo wohnen <strong>Sie</strong>?</td><td><span class="ro-translation">Unde locuiești? / Unde locuiți?</span></td></tr>
                 </tbody>
             </table>
 
