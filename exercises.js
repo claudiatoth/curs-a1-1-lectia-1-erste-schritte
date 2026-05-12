@@ -3,6 +3,21 @@
 // Claudia Toth · A1.1 · Lecția 1 · 5 exerciții
 // ============================================
 
+// Normalizare răspuns: acceptă AMBELE forme (cu/fără diacritice germane)
+// ß↔ss · ä↔ae · ö↔oe · ü↔ue · lowercase · trim · fără punctuație
+function normalizeAnswer(str) {
+    return (str || '')
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/ß/g, 'ss')
+        .replace(/ä/g, 'ae')
+        .replace(/ö/g, 'oe')
+        .replace(/ü/g, 'ue')
+        .replace(/\s+/g, ' ')
+        .replace(/[.,!?;:]/g, '');
+}
+
 // ============================================
 // EXERCIȚIUL 1: Formal sau informal?
 // ============================================
@@ -78,8 +93,8 @@ function checkEx2() {
     ex2Data.forEach(it => {
         const inp = document.getElementById(`ex2-${it.id}`);
         const fb = document.getElementById(`ex2-f${it.id}`);
-        const ans = (inp.value || '').trim().toLowerCase();
-        if (it.accept.some(a => a.toLowerCase() === ans)) {
+        const ans = normalizeAnswer(inp.value);
+        if (it.accept.some(a => normalizeAnswer(a) === ans)) {
             fb.className = 'feedback correct';
             fb.textContent = `Corect: ${it.correct}`;
             correct++;
@@ -163,8 +178,8 @@ function checkEx4() {
     ex4Data.forEach(it => {
         const inp = document.getElementById(`ex4-${it.id}`);
         const fb = document.getElementById(`ex4-f${it.id}`);
-        const norm = (inp.value || '').trim().toLowerCase().replace(/\s+/g, ' ').replace(/[.?!]/g, '').trim();
-        const target = it.correct.toLowerCase().replace(/\s+/g, ' ').replace(/[.?!]/g, '').trim();
+        const norm = normalizeAnswer(inp.value);
+        const target = normalizeAnswer(it.correct);
         if (norm === target) {
             fb.className = 'feedback correct';
             fb.textContent = `Corect: ${it.correct}`;

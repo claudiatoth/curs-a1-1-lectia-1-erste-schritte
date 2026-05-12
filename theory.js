@@ -18,6 +18,21 @@ const theoryHTML = `
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă subsecțiunea</span>
             </div>
+            <div class="andreea-note" style="margin-bottom: 14px;">
+                <img src="images/andreea.png" alt="Andreea" class="andreea-note-avatar">
+                <div class="andreea-note-content">
+                    <div class="speaker">Andreea îți spune (înainte să începem):</div>
+                    <div class="text" style="font-style: normal;">„Nu ai tastatură germană? <strong>Niciun stres!</strong> La toate exercițiile poți scrie:
+                        <ul style="margin: 6px 0 4px 18px; padding: 0;">
+                            <li><code style="background: #fff; padding: 1px 5px; border-radius: 3px;">ss</code> în loc de <code style="background: #fff; padding: 1px 5px; border-radius: 3px;">ß</code> &nbsp;→&nbsp; <em>„heisst" = „heißt"</em></li>
+                            <li><code style="background: #fff; padding: 1px 5px; border-radius: 3px;">ae</code> în loc de <code style="background: #fff; padding: 1px 5px; border-radius: 3px;">ä</code> &nbsp;→&nbsp; <em>„Rumaenien" = „Rumänien"</em></li>
+                            <li><code style="background: #fff; padding: 1px 5px; border-radius: 3px;">oe</code> în loc de <code style="background: #fff; padding: 1px 5px; border-radius: 3px;">ö</code> &nbsp;→&nbsp; <em>„schoen" = „schön"</em></li>
+                            <li><code style="background: #fff; padding: 1px 5px; border-radius: 3px;">ue</code> în loc de <code style="background: #fff; padding: 1px 5px; border-radius: 3px;">ü</code> &nbsp;→&nbsp; <em>„gruessen" = „grüßen"</em></li>
+                        </ul>
+                        Sistemul acceptă <strong>ambele forme</strong> automat. Eu așa am început — fără tastatură germană! E o convenție oficială folosită și de germani când scriu fără diacritice."</div>
+                </div>
+            </div>
+
             <div class="theory-box">
                 <h4>Bine ai venit la „Annettes Deutschkurs"!</h4>
                 <p>Astăzi e prima zi de curs. Annette, profesoara, e în clasă. <strong>Andreea</strong> intră prima — e româncă, e studentă în Brandenburg și e ușor emoționată. <strong>Tu ești al 7-lea în clasă</strong> — și înveți alături de ea.</p>

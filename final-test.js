@@ -3,6 +3,21 @@
 // Claudia Toth · A1.1 · Lecția 1 · 15 întrebări mixte
 // ============================================
 
+// Normalizare răspuns: acceptă AMBELE forme (cu/fără diacritice germane)
+// ß↔ss · ä↔ae · ö↔oe · ü↔ue · lowercase · trim · fără punctuație
+function normalizeTestAnswer(str) {
+    return (str || '')
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/ß/g, 'ss')
+        .replace(/ä/g, 'ae')
+        .replace(/ö/g, 'oe')
+        .replace(/ü/g, 'ue')
+        .replace(/\s+/g, ' ')
+        .replace(/[.,!?;:]/g, '');
+}
+
 const finalTestData = [
     // 4x Salutări (formal/informal)
     { type: 'multiple', category: '🎩 Salutări', question: 'Care salutare este FORMALĂ?', options: ['Hallo!', 'Tschüss!', 'Guten Tag!', 'Bis bald!'], correct: 'Guten Tag!', explanation: '„Guten Tag" e formal/neutru. „Hallo, Tschüss, Bis bald" sunt informale.' },
@@ -156,8 +171,8 @@ function checkCurrentQuestion() {
     if (q.type === 'multiple') {
         isCorrect = userAnswer.toLowerCase() === q.correct.toLowerCase();
     } else {
-        const norm = userAnswer.toLowerCase().replace(/\s+/g, ' ');
-        isCorrect = q.accept.some(a => a.toLowerCase().replace(/\s+/g, ' ') === norm);
+        const norm = normalizeTestAnswer(userAnswer);
+        isCorrect = q.accept.some(a => normalizeTestAnswer(a) === norm);
     }
     userAnswers[currentQuestionIndex] = { answer: userAnswer, correct: isCorrect, checked: true };
     displayFeedback(currentQuestionIndex);
