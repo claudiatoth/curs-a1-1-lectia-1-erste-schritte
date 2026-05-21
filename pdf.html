@@ -50,12 +50,40 @@
         td.ro-text { color: #6b7280; font-style: italic; }
         .ro-translation { display: block; color: #6b7280; font-style: italic; font-size: 9pt; margin-top: 1px; }
 
-        .andreea-note { border-left: 3px solid #f59e0b; padding: 6px 12px; margin: 8px 0; page-break-inside: avoid; font-style: italic; color: #78350f; }
+        .andreea-note {
+            border-left: 3px solid #f59e0b;
+            padding: 6px 12px;
+            margin: 8px 0;
+            page-break-inside: avoid;
+            font-style: italic;
+            color: #78350f;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
         .andreea-note .speaker { font-weight: bold; font-style: normal; color: #065f46; margin-bottom: 2px; }
-        .andreea-note-avatar { display: none; }
-        .andreea-note-content { display: block; }
+        .andreea-note-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 1.5px solid #f59e0b;
+        }
+        .andreea-note-content { display: block; flex: 1; }
 
-        /* Cast banner (A1+) */
+        /* Dialog avatar — poză mică în dialoguri (Annette ↔ personaje) */
+        .dialog-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1.5px solid #047857;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+
+        /* Cast banner (A1+) — 6 personaje cu poze mici 50x50 pe un rând */
         .cast-banner {
             border-left: 3px solid #047857;
             padding: 8px 14px;
@@ -68,10 +96,10 @@
             grid-template-columns: repeat(6, 1fr);
             gap: 8px;
         }
-        .cast-card { text-align: center; font-size: 8.5pt; }
+        .cast-card { text-align: center; font-size: 8.5pt; page-break-inside: avoid; }
         .cast-card img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 4px; border: 2px solid #047857; }
-        .cast-card .name { color: #065f46; font-weight: bold; font-size: 9pt; }
-        .cast-card .detail { color: #6b7280; font-style: italic; font-size: 7.5pt; }
+        .cast-card .name { color: #065f46; font-weight: bold; font-size: 9pt; display: block; }
+        .cast-card .detail { color: #6b7280; font-style: italic; font-size: 7.5pt; display: block; }
 
         .ex-block { margin-bottom: 14px; page-break-inside: avoid; }
         .ex-block h3 { color: #065f46; font-size: 12pt; margin-bottom: 5px; }
